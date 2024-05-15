@@ -1,0 +1,23 @@
+.resultList-container {
+  margin: 0 auto 3.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resultList-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.resultList-container img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .resultList-container {
+    resultlist-container: 1fr;
+  }
+}
